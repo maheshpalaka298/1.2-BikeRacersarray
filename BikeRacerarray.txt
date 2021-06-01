@@ -1,0 +1,54 @@
+//To Print Qualified Bikeracers in a Race//
+import java.util.*;
+class BikeRacerarray 
+{
+	public static void main(String[] args) 
+	{
+		Scanner RC=new Scanner(System.in);
+		int Speed[]=new int[5];
+		for(int i=0;i<5;i++)
+		{
+			System.out.println("\nEnter the Speed of racer "+(i+1)+" : ");
+			Speed[i]=RC.nextInt();
+		}
+		int sum=0;
+			for(int i=0;i<5;i++)
+			sum+=Speed[i];
+		double avg=sum/5;
+		System.out.println("\n Average Speed to Qualify the race is : "+avg);
+		System.out.println("\n The Speed of Qualifying Racers are : ");
+		for(int i=0;i<5;i++)
+		{
+			if(Speed[i]>=avg)
+			{
+				System.out.println("\n Racer -"+(i+1)+" is Qualified the Race with "+Speed[i]);
+			}
+	}
+	}
+
+	//Output//
+	
+Enter the Speed of racer 1 :
+250
+
+Enter the Speed of racer 2 :
+240
+
+Enter the Speed of racer 3 :
+360
+
+Enter the Speed of racer 4 :
+200
+
+Enter the Speed of racer 5 :
+180
+
+ Average Speed to Qualify the race is : 246.0
+
+ The Speed of Qualifying Racers are :
+
+ Racer -1 is Qualified the Race with 250
+
+ Racer -3 is Qualified the Race with 360
+Press any key to continue . . .
+}
